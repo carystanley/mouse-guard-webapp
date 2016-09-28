@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import Roll from './Roll'
 
 const RollHistory = ({ rollHistory }) => (
-  <ul>
+  <ul className="list-container">
     {rollHistory.map((roll, idx) =>
       <Roll
         key={idx}

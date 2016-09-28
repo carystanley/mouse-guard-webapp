@@ -15,3 +15,17 @@
 .dice-4 { background-position: -150px 0; }
 .dice-5 { background-position: -200px 0; }
 .dice-6 { background-position: -250px 0; }
+
+.list-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-container li {
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+}
