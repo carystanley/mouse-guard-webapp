@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 const Roll = ({ values, successes }) => (
   <li>
-    <div>{values.map(value => <span>{value}</span>)}</div>
+    <div>{values.map(value => <span className={'dice dice-' + value} />)}</div>
     <div>{successes} Successes</div>
   </li>
 )
