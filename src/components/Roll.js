@@ -2,8 +2,8 @@ import React, { PropTypes } from 'react'
 
 const Roll = ({ values, successes }) => (
   <li>
-    {values.map(value => <span>{value}</span>)}
-    {successes} Successes
+    <div>{values.map(value => <span>{value}</span>)}</div>
+    <div>{successes} Successes</div>
   </li>
 )
 

@@ -3,23 +3,18 @@ import { connect } from 'react-redux'
 import { addRoll } from '../actions'
 
 let AddRoll = ({ dispatch }) => {
-  let input
-
   return (
     <div>
-      <form onSubmit={e => {
-        e.preventDefault()
-        if (!input.value.trim()) {
-          return
-        }
-        dispatch(addRoll(parseInt(input.value, 10)))
-        input.value = ''
-      }}>
-        <input ref={node => {
-          input = node
-        }} />
-        <button type="submit">Roll</button>
-      </form>
+      <button onClick={e => { dispatch(addRoll(1)); }}>1</button>
+      <button onClick={e => { dispatch(addRoll(2)); }}>2</button>
+      <button onClick={e => { dispatch(addRoll(3)); }}>3</button>
+      <button onClick={e => { dispatch(addRoll(4)); }}>4</button>
+      <button onClick={e => { dispatch(addRoll(5)); }}>5</button>
+      <button onClick={e => { dispatch(addRoll(6)); }}>6</button>
+      <button onClick={e => { dispatch(addRoll(7)); }}>7</button>
+      <button onClick={e => { dispatch(addRoll(8)); }}>8</button>
+      <button onClick={e => { dispatch(addRoll(9)); }}>9</button>
+      <button onClick={e => { dispatch(addRoll(10)); }}>10</button>
     </div>
   )
 }
