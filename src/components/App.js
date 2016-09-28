@@ -1,4 +1,6 @@
 import React from 'react'
+import '../css/main.css';
+
 import AddRoll from '../containers/AddRoll'
 import RollHistory from '../containers/RollHistory'
 
