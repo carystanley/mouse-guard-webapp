@@ -1,4 +1,10 @@
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #903;
+}
+
 .dice {
   display: inline-block;
   width: 50px;
@@ -20,12 +26,13 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: #903;
 }
 
 .list-container li {
   display: block;
   margin: 5px;
   padding: 10px;
-  background-color: #eee;
+  background-color: #eda;
   border-radius: 5px;
 }
