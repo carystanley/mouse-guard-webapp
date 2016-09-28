@@ -7,7 +7,9 @@ import RollHistory from '../containers/RollHistory'
 const App = () => (
   <div>
     <RollHistory />
-    <AddRoll />
+    <div id="footer">
+      <AddRoll />
+    </div>
   </div>
 )
 

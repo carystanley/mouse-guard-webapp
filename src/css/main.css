@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #903;
+  height: 100%;
 }
 
 .dice {
@@ -35,4 +36,11 @@ body {
   padding: 10px;
   background-color: #eda;
   border-radius: 5px;
+}
+
+#footer {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
