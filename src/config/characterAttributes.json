@@ -1,0 +1,167 @@
+{
+  "ranks": [
+    "Tenderpaw",
+    "Guardmouse",
+    "Patrol Guard",
+    "Patrol Leader",
+    "Guard Captain"
+  ],
+  "homes": {
+    "Barkstone":{
+      "book": "MG2e",
+      "page": 170,
+      "skills": ["Carpenter", "Potter", "Glazier"],
+      "traits": ["Steady Paw"]
+    },
+    "Copperwood":{
+      "book": "MG2e",
+      "page": 170,
+      "skills": ["Smith", "Haggler"],
+      "traits": ["Independent"]
+    },
+    "Elmoss":{
+      "book": "MG2e",
+      "page": 172,
+      "skills": ["Carpenter", "Harvester"],
+      "traits": ["Alert"]
+    },
+    "Flintrust":{
+      "book": "NRNM",
+      "page": 8,
+      "skills": ["Smith", "Laborer"],
+      "traits": ["Bold", "Determined"]
+    },
+    "Grasslake":{
+      "book": "NRNM",
+      "page": 10,
+      "skills": ["Insectrist", "Militarist"],
+      "traits": ["Nimble", "Defender"]
+    },
+    "Ivydale":{
+      "book": "MG2e",
+      "page": 173,
+      "skills": ["Harvester", "Baker"],
+      "traits": ["Hard Worker"]
+    },
+    "Lockhaven":{
+      "book": "MG2e",
+      "page": 174,
+      "skills": ["Weaver", "Armorer"],
+      "traits": ["Generous", "Guard's Honor"]
+    },
+    "Port Sumac":{
+      "book": "MG2e",
+      "page": 175,
+      "skills": ["Boatcrafter", "Weather Watcher"],
+      "traits": ["Tough", "Weather Sense"]
+    },
+    "Sandmason":{
+      "book": "NRNM",
+      "page": 9,
+      "skills": ["Weather Watcher", "Glazier"],
+      "traits": ["Nocturnal", "Quiet"]
+    },
+    "Shaleburrow":{
+      "book": "MG2e",
+      "page": 176,
+      "skills": ["Mason", "Harvester", "Miller"],
+      "traits": ["Open-Minded"]
+    },
+    "Sprucetuck":{
+      "book": "MG2e",
+      "page": 177,
+      "skills": ["Scientist", "Loremouse"],
+      "traits": ["Inquisitive", "Rational"]
+    }
+  },
+  "skills": [
+    "Administrator", "Apiarist", "Archivist", "Armorer", "Baker",
+    "Boatcrafter", "Brewer", "Carpenter", "Cartographer", "Cook",
+    "Manipulator", "Fighter", "Glazier", "Haggler", "Harvester",
+    "Healer", "Hunter", "Insectrist", "Instructor", "Laborer",
+    "Loremouse", "Militarist", "Miller", "Orator", "Pathfinder",
+    "Persuader", "Potter", "Scientist", "Scout", "Smith",
+    "Stonemason", "Survivalist", "Weather Watcher", "Weaver"
+  ],
+  "parentSkills": [
+    "Apiarist", "Archivist", "Armorer", "Baker",
+    "Boatcrafter", "Brewer", "Carpenter", "Cartographer",
+    "Glazier", "Harvester", "Insectrist", "Miller",
+    "Potter", "Smith", "Stonemason", "Weaver"
+  ],
+  "conviceSkills": ["Manipulator", "Orator", "Persuader"],
+  "seniorArtisanSkills": [
+    "Apiarist", "Archivist", "Armorer", "Baker",
+    "Brewer", "Carpenter", "Cartographer", "Cook",
+    "Glazier", "Harvester",
+    "Healer", "Insectrist", "Laborer",
+    "Miller", "Potter", "Smith",
+    "Stonemason", "Weaver"
+  ],
+  "mentorSkills": [
+    "Fighter", "Healer", "Hunter", "Instructor", "Pathfinder",
+    "Scout", "Survivalist", "Weather Watcher"
+  ],
+  "generousTraits": ["Bold", "Generous", "Impetuous"],
+  "braveTraits": ["Fearless", "Brave", "Foolish"],
+  "tenderpawWises": ["Code of the Guard", "Legends of the Guard"],
+  "guardCaptainWises": ["Lockhaven", "Matriarch"],
+  "wises": [
+    "Apiary", "Armor", "Autumn storm", "Badger", "Barkstone", "Bird",
+    "Blizzard", "Bramble", "Brush fire", "Burrow", "Celebrations", "Clear and warm weather",
+    "Coast", "Cold rain", "Cold snap", "Copperwood", "Coyote", "Craft",
+    "Crime", "Darkheather", "Deer", "Drought", "Elmoss", "Epidemic",
+    "Escort", "Famine", "Flash flood", "Forest fire", "Forest", "Fox",
+    "Freezing", "Frog", "Governor", "Grain", "Guard captain", "Guardmouse",
+    "Harvest", "Hawk", "Heat wave", "Herb", "Hidey hole", "Ice storm",
+    "Ice", "Lake", "Leaf cover", "Lockhaven", "Mail", "Medicine",
+    "Moose", "Moss", "Mouse Guard", "Mud", "Night", "Nut",
+    "Open ground", "Owl", "Path", "Patrol guard", "Patrol leader", "Planting",
+    "Poison", "Pond", "Predator", "Raccoon", "Rain", "Raven",
+    "Rebellion", "Recipe", "Road", "Rocky terrain", "Scent Border", "Shaleburrow",
+    "Shield", "Shore", "Shortages", "Snake", "Snow", "Sprucetuck",
+    "Squirrel", "Star", "Stream", "Swamps", "Tall grass", "Tenderpaw",
+    "Thorn", "Thunderstorm", "Tide", "Tradesmouse", "Trail", "Transport",
+    "Trap", "Tunnel", "Turtle", "Unseasonably cold", "Unseasonably warm",
+    "War", "Weasel", "Widget", "Wild country", "Wild mouse", "Wolf"
+  ],
+  "traits": [
+    "Bigpaw", "Bitter", "Bodyguard", "Bold", "Brave",
+    "Calm", "Clever", "Compassionate", "Cunning", "Curious",
+    "Deep Ear", "Defender", "Determined", "Driven", "Early Riser",
+    "Extrovert", "Fat", "Fearful", "Fearless", "Fiery",
+    "Generous", "Graceful", "Guard’s Honor", "Innocent", "Jaded",
+    "Leader", "Longtail", "Lost", "Natural Bearings", "Nimble",
+    "Nocturnal", "Oldfur", "Quick-Witted", "Quiet", "Scarred",
+    "Sharp-Eyed", "Sharptooth", "Short", "Skeptical", "Skinny",
+    "Stoic", "Stubborn", "Suspicious", "Tall", "Thoughtful",
+    "Tough", "Weather Sense", "Wise", "Wolf’s Snout", "Young"
+  ],
+  tenderpawTraits: [
+    "Bigpaw", "Brave", "Calm", "Clever", "Compassionate", "Curious",
+    "Deep Ear", "Defender", "Determined", "Driven", "Early Riser",
+    "Extrovert", "Fearful", "Fearless", "Fiery", "Generous", "Graceful",
+    "Longtail", "Lost", "Natural Bearings", "Nimble",
+    "Quick-Witted", "Quiet", "Scarred",
+    "Sharptooth", "Short", "Skeptical", "Skinny",
+    "Stubborn", "Suspicious", "Tall", "Tough", "Wolf’s Snout"
+  ],
+  "guardCaptainTraits": [
+    "Bitter", "Bodyguard", "Brave",
+    "Calm", "Clever", "Compassionate", "Cunning", "Curious",
+    "Defender", "Driven", "Early Riser",
+    "Fearful", "Fearless", "Jaded",
+    "Leader", "Natural Bearings",
+    "Nocturnal", "Oldfur", "Quiet", "Scarred",
+    "Sharp-Eyed", "Skeptical", "Skinny",
+    "Stoic", "Thoughtful",
+    "Tough", "Weather Sense", "Wise"
+  ],
+  "furColor": [
+    "Brown",
+    "Blonde",
+    "Gray",
+    "Black",
+    "Red"
+  ]
+}
