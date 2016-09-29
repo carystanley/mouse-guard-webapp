@@ -1,25 +1,26 @@
 import config from '../config/character.json';
 
 
-var yesNo = ["Yes", "No"];
-var noChoice = [];
+const yesNo = ["Yes", "No"];
+const noChoice = [];
 
-var skillBump = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] + 1 : 2});
-var traitBump = (traits, name) => ({...traits, [name]: (traits[name]) ? traits[name] + 1 : 1});
-var skillReduce = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] - 1 : undefined});
-var wiseAdd (wises, name) => (...wises, [name]: true);
+const skillBump = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] + 1 : 2});
+const traitBump = (traits, name) => ({...traits, [name]: (traits[name]) ? traits[name] + 1 : 1});
+const skillReduce = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] - 1 : undefined});
+const wiseAdd (wises, name) => (...wises, [name]: true);
 
-var bumpSkill = (state, name) => ({...state, Skills: skillBump(state.Skills, name)});
-var bumpTrait = (state, name) => ({...state, Traits: traitBump(state.Traits, name)});
-var reduceSkill = (state, name) => ({...state, Skills: skillReduce(state.Skills, name)});
-var addWise = (state, name) => ({...state, Wises: wiseAdd(state.Wises, name)});
+const bumpSkill = (state, name) => ({...state, Skills: skillBump(state.Skills, name)});
+const bumpTrait = (state, name) => ({...state, Traits: traitBump(state.Traits, name)});
+const reduceSkill = (state, name) => ({...state, Skills: skillReduce(state.Skills, name)});
+const addWise = (state, name) => ({...state, Wises: wiseAdd(state.Wises, name)});
 
-var wiseSuffixMap = (wises) => (wises.map((name) => (name + '-wise')));
+const wiseSuffixMap = (wises) => (wises.map((name) => (name + '-wise')));
 
 var CharacterGeneratror = [{
   question: 'What is your Guard Rank?',
   choices: config.ranks,
   affect: (state, choice) => ({
+    ...state,
     ...config.bases.default,
     ...config.bases[choice],
     Rank: choice
