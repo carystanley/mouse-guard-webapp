@@ -7,12 +7,21 @@ const displayOrder = [
   "Circles", "Skills", "Wises", "Traits", "Gear"
 ];
 
+const AttributeList = ({list}) => (
+  <ul>
+    {Object.keys(list).map((field => {
+      let value = list[field];
+      return (typeof value === 'boolean') ? <li>{field}</li> : <li><span>{field}</span><span>{value}</span></li>
+    }))}
+  </ul>
+)
+
 const CharacterSheet = ({character}) => (
   <ul>
-    {displayOrder.map((field => {
+    {displayOrder.map(field => {
       let value = character[field];
-      return <li>{field}: {value}</li> 
-    }))}
+      return <li><span>{field}</span><span>{(typeof value === 'object' ? <AttributeList list={value} /> : value )}</span></li> 
+    })}
   </ul>
 )
 
