@@ -19,7 +19,7 @@ const intialState = updateChoices({
 
 const character = (state = intialState, action) => {
   switch (action.type) {
-    case 'UPDATE_CHARACTER':
+    case 'CHARACTER_CHOICE':
       let choice = action.choice
       let skip = false;
       while (choice || skip) {

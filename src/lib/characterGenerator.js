@@ -7,7 +7,7 @@ const noChoice = [];
 const skillBump = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] + 1 : 2});
 const traitBump = (traits, name) => ({...traits, [name]: (traits[name]) ? traits[name] + 1 : 1});
 const skillReduce = (skills, name) => ({...skills, [name]: (skills[name]) ? skills[name] - 1 : undefined});
-const wiseAdd (wises, name) => (...wises, [name]: true);
+const wiseAdd = (wises, name) => ({...wises, [name]: true});
 
 const bumpSkill = (state, name) => ({...state, Skills: skillBump(state.Skills, name)});
 const bumpTrait = (state, name) => ({...state, Traits: traitBump(state.Traits, name)});
@@ -59,7 +59,7 @@ var CharacterGeneratror = [{
   affect: (state, choice) => (bumpSkill({...state, Mentor: `p310 (${choice})`}, choice))
 }, {
   question: 'What is your Speciality?',
-  choices: (state) => ((state.Rank == "Tenderpaw") ? noChoice : config.mentorSkills),
+  choices: (state) => ((state.Rank === "Tenderpaw") ? noChoice : config.mentorSkills),
   affect: (state, choice) => (bumpSkill({...state, Mentor: `p310 (${choice})`}, choice))
 }, {
   question: 'Nature: Do you save for later?',
@@ -79,7 +79,7 @@ var CharacterGeneratror = [{
   affect: (state, choice) => ((choice === 'Yes') ? {...state, Nature: state.Nature + 1, fearWeasels: true} : state)
 }, {
   question: 'Nature: What trait do you gain for being brave?',
-  choices: (state) => (state.fearWeasels ? noChoice : braveTraits),
+  choices: (state) => (state.fearWeasels ? noChoice : config.braveTraits),
   affect: bumpTrait
 }, {
   question: 'What are you wise about Tenderpaw?',

@@ -1,15 +1,20 @@
 import React from 'react'
 import '../css/main.css';
 
-import AddRoll from '../containers/AddRoll'
-import RollHistory from '../containers/RollHistory'
+// import AddRoll from '../containers/AddRoll'
+// import RollHistory from '../containers/RollHistory'
+import CharacterQuiz from '../containers/CharacterQuiz'
 
-const App = () => (
-  <div>
+/*
     <RollHistory />
     <div id="footer">
       <AddRoll />
     </div>
+*/
+
+const App = () => (
+  <div>
+    <CharacterQuiz />
   </div>
 )
 
