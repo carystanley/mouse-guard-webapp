@@ -2,7 +2,7 @@ import characterGenerator from '../lib/characterGenerator';
 
 const nonWhile = () => (false); 
 const resolve = (value, state) => ((typeof value === 'function') ? value(state) : value);
-const currentStep = (state) => (characterGenerator[state.step]);
+const currentStep = (state) => (characterGenerator[state.step] || {});
 const updateChoices = (state) => ({
   ...state,
   question: resolve(currentStep(state).question, state),
@@ -24,7 +24,7 @@ const character = (state = intialState, action) => {
       let skip = false;
       while (choice || skip) {
         state = updateCharacter(state, choice);
-        skip = !state.choices || !state.choices.length; // skip when we have no choices
+        skip = state.choices && !state.choices.length; // skip when we have no choices
         choice = state.choices && (state.choices.length === 1) && state.choices[0] // choose when there is only one choice
       }
       return state;
