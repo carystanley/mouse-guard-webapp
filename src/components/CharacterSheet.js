@@ -11,7 +11,10 @@ const AttributeList = ({list}) => (
   <ul>
     {Object.keys(list).map((field => {
       let value = list[field];
-      return (typeof value === 'boolean') ? <li>{field}</li> : <li><span>{field}</span><span>{value}</span></li>
+      return value ? ((typeof value === 'boolean') ?
+        <li>{field}</li> :
+        <li><span>{field}</span><span>{value}</span></li>
+      ) : null;
     }))}
   </ul>
 )
