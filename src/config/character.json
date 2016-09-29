@@ -6,6 +6,122 @@
     "Patrol Leader",
     "Guard Captain"
   ],
+  "bases": {
+    "default": {
+      "Name": "p310",
+      "Parents": "",
+      "Age": "",
+      "Senior Artisan": "",
+      "Home": "",
+      "Mentor": "",
+      "Fur Color": "Brown, Blonde, Gray, Black, Red",
+      "Rank": "",
+      "Cloak": "Choose a color",
+      "Enemy": "p310",
+      "Friend": "p310",
+      "Nature": 3,
+      "Will": 0,
+      "Health": 0,
+      "Resources": 0,
+      "Circles": 0,
+      "Belief": "Choose an ideal p42",
+      "Goal": "Leave blank (chosen each session after mission briefing p45)",
+      "Instinct": "Choose something you do a lot p47",
+      "Skills": {},
+      "Wises": {},
+      "Traits": {},
+      "Gear": "Choose 1 weapon and some simple items",
+      "saveForWinter": false,
+      "fearWeasels": false,
+      "wiseChoices": 0
+    },
+    "Tenderpaw": {
+      "Age": "14-17",
+      "Cloak": "None",
+      "Will": 3,
+      "Health": 6,
+      "Skills": {
+        "Pathfinder": 2,
+        "Scout": 2,
+        "Laborer": 2
+      },
+      "Circles": 1,
+      "Resources": 1
+    },
+    "Guardmouse": {
+      "Age": "18-25",
+      "Will": 3,
+      "Health": 5,
+      "Skills": {
+        "Fighter": 3,
+        "Haggler": 2,
+        "Pathfinder": 3,
+        "Scout": 2,
+        "Survivalist": 2
+      },
+      "wiseChoices": 1,
+      "Circles": 2,
+      "Resources": 2
+    },
+    "Patrol Guard": {
+      "Age": "21-50",
+      "Will": 4,
+      "Health": 4,
+      "Skills": {
+         "Cook": 2,
+         "Fighter": 3,
+         "Hunter": 3,
+         "Scout": 2,
+         "Healer": 2,
+         "Pathfinder": 2,
+         "Survivalist": 2,
+         "Weather Watcher": 2
+       },
+       "wiseChoices": 2,
+       "Circles": 3,
+       "Resources": 3
+    },
+    "Patrol Leader": {
+      "Age": "21-60",
+      "Will": 5,
+      "Health": 4,
+      "Skills": {
+        "Fighter": 3,
+        "Hunter": 3,
+        "Instructor": 2,
+        "Loremouse": 2,
+        "Persuader": 2,
+        "Pathfinder": 2,
+        "Scout": 2,
+        "Survivalist": 3,
+        "Weather Watcher": 2
+      },
+      "wiseChoices": 3,
+      "Circles": 3,
+      "Resources": 4
+    },
+    "Guard Captain": {
+      "Age": "41-60",
+      "Will": 6,
+      "Health": 3,
+      "Skills": {
+        "Administrator": 3,
+        "Fighter": 3,
+        "Healer": 2,
+        "Hunter": 3,
+        "Instructor": 2,
+        "Militarist": 3,
+        "Orator": 2,
+        "Pathfinder": 3,
+        "Scout": 3,
+        "Survivalist": 3,
+        "Weather Watcher": 3
+      },
+      "wiseChoices": 3,
+      "Circles": 4,
+      "Resources": 5
+    }
+  },
   "homes": {
     "Barkstone":{
       "book": "MG2e",
@@ -137,7 +253,7 @@
     "Stoic", "Stubborn", "Suspicious", "Tall", "Thoughtful",
     "Tough", "Weather Sense", "Wise", "Wolf’s Snout", "Young"
   ],
-  tenderpawTraits: [
+  "tenderpawTraits": [
     "Bigpaw", "Brave", "Calm", "Clever", "Compassionate", "Curious",
     "Deep Ear", "Defender", "Determined", "Driven", "Early Riser",
     "Extrovert", "Fearful", "Fearless", "Fiery", "Generous", "Graceful",
