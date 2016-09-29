@@ -9,7 +9,7 @@ const updateChoices = (state) => ({
   choices: resolve(currentStep(state).choices, state)
 });
 const applyChoice = (state, choice) => ((choice) ? currentStep(state).affect(state, choice) : state);
-const incStep = () => (state) => ((currentStep(state).while || nonWhile)(state) ? state : {...state, step: state + 1}); 
+const incStep = (state) => ((currentStep(state).while || nonWhile)(state) ? state : {...state, step: state.step + 1}); 
 const updateCharacter = (state, choice) => (updateChoices(incStep(applyChoice(state, choice))));
 
 const intialState = updateChoices({
