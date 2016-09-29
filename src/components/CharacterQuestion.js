@@ -2,8 +2,8 @@ import React from 'react'
 
 const CharacterQuestions = ({character, onChoose}) => (
   <div>
-    <div>{character.question}</div>
-    <div>{character.choices ? character.choices.map((choice) => <button onClick={() => onChoose(choice)}>{choice}</button>) : null}</div>
+    <div className="question">{character.question}</div>
+    <div className="choices">{character.choices ? character.choices.map((choice) => <button onClick={() => onChoose(choice)}>{choice}</button>) : null}</div>
   </div>
 )
 

@@ -44,3 +44,32 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+.question {
+  text-align: center;
+  background-color: #fff;
+}
+
+.choices button {
+  display: block;
+  width: 100%;
+  background-color: #eda;
+  margin: 5px;
+}
+
+.sheet {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: solid #ccc 3px;
+  border-bottom: solid #ccc 3px;
+}
+
+.sheet li {
+  list-style-type: none;
+}
+
+.field {
+  font-weight: bold;
+  padding-right: 5px;
+}

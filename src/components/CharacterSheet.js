@@ -20,10 +20,10 @@ const AttributeList = ({list}) => (
 )
 
 const CharacterSheet = ({character}) => (
-  <ul>
+  <ul className="sheet">
     {displayOrder.map(field => {
       let value = character[field];
-      return <li><span>{field}</span><span>{(typeof value === 'object' ? <AttributeList list={value} /> : value )}</span></li> 
+      return <li><span className="field">{field}</span><span>{(typeof value === 'object' ? <AttributeList list={value} /> : value )}</span></li> 
     })}
   </ul>
 )
