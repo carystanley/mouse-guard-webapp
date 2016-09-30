@@ -8,6 +8,7 @@ body {
   padding: 0;
   background-color: #eee;
   height: 100%;
+  font-family: Helvetica, Arial, Sans-Serif;
 }
 
 .dice {
@@ -86,8 +87,27 @@ body {
   list-style-type: none;
 }
 
-.field {
+.sheet .field {
   font-weight: bold;
+  padding-right: 5px;
+}
+
+.sheet .attributes {
+  
+}
+
+.sheet .attributes li {
+  display: inline-block;
+  background-color: #4095EF;
+  color: #fff;
+  font-size: 10pt;
+  margin: 3px;
+  border-radius: 5px;
+  border-width: 0;
+  padding: 6px 10px;
+}
+
+.sheet .attributes .name {
   padding-right: 5px;
 }
 

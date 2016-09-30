@@ -8,12 +8,12 @@ const displayOrder = [
 ];
 
 const AttributeList = ({list}) => (
-  <ul>
+  <ul className="attributes">
     {Object.keys(list).map((field => {
       let value = list[field];
       return value ? ((typeof value === 'boolean') ?
         <li>{field}</li> :
-        <li><span>{field}</span><span>{value}</span></li>
+        <li><span className="name">{field}</span><span>{value}</span></li>
       ) : null;
     }))}
   </ul>
@@ -23,7 +23,7 @@ const CharacterSheet = ({character}) => (
   <ul className="sheet">
     {displayOrder.map(field => {
       let value = character[field];
-      return <li><span className="field">{field}</span><span>{(typeof value === 'object' ? <AttributeList list={value} /> : value )}</span></li> 
+      return <li><span className="field">{field}:</span><span>{(typeof value === 'object' ? <AttributeList list={value} /> : value )}</span></li> 
     })}
   </ul>
 )
