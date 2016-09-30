@@ -2,6 +2,7 @@
   "name": "mouse-guard-webapp",
   "version": "0.0.1",
   "private": true,
+  "homepage": "https://carystanley.github.io/mouse-guard-webapp/", 
   "devDependencies": {
     "react-scripts": "^0.6.0"
   },
