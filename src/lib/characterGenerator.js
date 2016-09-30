@@ -90,10 +90,10 @@ var CharacterGeneratror = [{
   choices: (state) => ((state.Rank === 'Guard Captain') ? wiseSuffixMap(config.guardCaptainWises) : noChoice),
   affect: addWise
 }, {
-  question: (state) => (`What are you wise about? (Choices Remaining: $(state.wiseChoices))`),
+  question: (state) => (`What are you wise about? (Choices Remaining: ${state.wiseChoices})`),
   choices: (state) => ((state.wiseChoices > 0) ? wiseSuffixMap(config.wises) : noChoice),
   affect: (state, choice) => (addWise({...state, wiseChoices: state.wiseChoices - 1}, choice)),
-  while: (state) => (state.wiseChoices > 1)
+  while: (state) => (state.wiseChoices > 0)
 }, {
   question: 'Choose a trait you were born with:',
   choices: config.traits,
