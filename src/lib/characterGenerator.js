@@ -14,6 +14,8 @@ const bumpTrait = (state, name) => ({...state, Traits: traitBump(state.Traits, n
 const reduceSkill = (state, name) => ({...state, Skills: skillReduce(state.Skills, name)});
 const addWise = (state, name) => ({...state, Wises: wiseAdd(state.Wises, name)});
 
+const randomName = () => (config.names[Math.floor(config.names.length * Math.random())]);
+
 const wiseSuffixMap = (wises) => (wises.map((name) => (name + '-wise')));
 
 var CharacterGeneratror = [{
@@ -23,7 +25,8 @@ var CharacterGeneratror = [{
     ...state,
     ...config.bases.default,
     ...config.bases[choice],
-    Rank: choice
+    Rank: choice,
+    Name: `${randomName()} (see p310)`
   })
 }, {
   question: 'Where were you born?',
@@ -44,7 +47,7 @@ var CharacterGeneratror = [{
 }, {
   question: 'What is your parent\'s trade?',
   choices: config.parentSkills,
-  affect: (state, choice) => (bumpSkill({...state, Parents: `p310 (${choice})`}, choice))
+  affect: (state, choice) => (bumpSkill({...state, Parents: `${randomName()} and ${randomName()} (${choice}s)`}, choice))
 }, {
   question: 'How do you convince people?',
   choices: config.conviceSkills,
@@ -52,15 +55,15 @@ var CharacterGeneratror = [{
 }, {
   question: 'What was your senior artisan?',
   choices: config.seniorArtisanSkills,
-  affect: (state, choice) => (bumpSkill({...state, "Senior Artisan": `p310 (${choice})`}, choice))
+  affect: (state, choice) => (bumpSkill({...state, "Senior Artisan": `${randomName()} the ${choice}`}, choice))
 }, {
   question: 'What did your mentor stress in training?',
   choices: config.mentorSkills,
-  affect: (state, choice) => (bumpSkill({...state, Mentor: `p310 (${choice})`}, choice))
+  affect: (state, choice) => (bumpSkill({...state, Mentor: `${randomName()} the ${choice}`}, choice))
 }, {
   question: 'What is your Speciality?',
   choices: (state) => ((state.Rank === "Tenderpaw") ? noChoice : config.mentorSkills),
-  affect: (state, choice) => (bumpSkill({...state, Mentor: `p310 (${choice})`}, choice))
+  affect: (state, choice) => (bumpSkill({...state, Mentor: `${randomName()} the ${choice}`}, choice))
 }, {
   question: 'Nature: Do you save for later?',
   choices: yesNo,
