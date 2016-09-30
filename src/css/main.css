@@ -126,3 +126,19 @@ body {
   position: absolute;
   line-height: inherit;
 }
+
+@media screen and (min-width : 900px) {
+  #primary{
+    float: left;
+    width: 50%;
+  }
+
+  #secondary{
+    float: right;
+    width: 50%;
+  }
+
+  .roomy {
+    padding: 20px;
+  }
+}
