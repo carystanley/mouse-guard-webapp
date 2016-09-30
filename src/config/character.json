@@ -274,11 +274,7 @@
     "Tough", "Weather Sense", "Wise"
   ],
   "furColor": [
-    "Brown",
-    "Blonde",
-    "Gray",
-    "Black",
-    "Red"
+    "Brown","Blonde","Gray","Black","Red"
   ],
   "names": [
     "Abram","Aengus","Algomin","Beagan","Brand","Cale","Caley","Connor","Curt","Faolan",
@@ -290,5 +286,16 @@
     "Sayble","Serra","Sloan","Sylvia","Taryn","Tinble","Veira", "Asel","Boris","Chester",
     "Colin","Demitri","Duncan","Elis","Elric","Gregory","Hamon","Larkin","Lawrence","Tenny",
     "Vladimir","Wilkin","Aster","Blossom","Bluebell","Eda","Flora","Faye","Mildred"
+  ],
+  "npcSkills": [
+    "Armorer"," Baker","Apiarist","Insectrist","Administrator","Magistrate","Judge",
+    "Archivist","Boatcrafter","Brewer","Innkeeper","Carpenter","Cartographer","Cook",
+    "Miner","Bandit","Thief","Swindler","Fighter","Glazier","Haggler","Peddler",
+    "Harvester","Healer","Hunter","Instructor","Laborer","Loremouse","Advisor","Town Guardsmouse",
+    "Strategist","Militarist","Miller","Barmouse","Orator","Deceiver","Pathfinder","Persuader","Potter",
+    "Scientist","Scout","Weapon Smith","Tool Smith","Stonemason","Historian","Gatekeeper","Survivalist",
+    "Hermit","Weather Watcher","Weaver","Naturalist","Politician","Merchant","Guard Aaptain","Patrol Leader",
+    "Patrol Guard","Guardmouse","Tenderpaw","Beetle Wrangler","Boatmouse","Charlatan","Forager","Merchant",
+    "Muscle","Mercenary","Naturalist","Soldier","Teacher", "Town Captian","Wanderer"
   ]
 }
